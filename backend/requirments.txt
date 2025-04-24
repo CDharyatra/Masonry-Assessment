@@ -1,0 +1,26 @@
+# Web Research Agent - Requirements.txt
+
+# Core dependencies
+Flask==2.0.1
+flask-cors==3.0.10
+requests==2.26.0
+beautifulsoup4==4.10.0
+python-dotenv==0.19.1
+
+# API integration
+serpapi==0.1.0
+
+# Content processing
+nltk==3.6.5
+html2text==2020.1.16
+
+# Error handling and logging
+logging==0.4.9.6
+
+# Production deployment
+gunicorn==20.1.0
+Werkzeug==2.0.1
+
+# Testing
+pytest==6.2.5
+pytest-cov==2.12.1
