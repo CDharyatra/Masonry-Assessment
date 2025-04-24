@@ -10,7 +10,7 @@ from config import Config
 from tools.information_synthesis import InformationSynthesisTool
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app, resources={r"/api/*": {"origins": "*"}})  # Enable CORS for all routes
 
 # Initialize the research agent
 synthesis_tool = InformationSynthesisTool()
